@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$container-padding-x: 20px;
+$container-max-width: 1280px;
+
+$color-dark-grey: #0a0a0a;
+$color-light: #fff;
+$color-grey: #848484;
+$color-crema: #c9a962;
+
+body {
+    font-family: "Inter", sans-serif !important;
+    background-color: $color-dark-grey;
+    color: $color-light;
+}
+
+.container {
+    padding-inline: $container-padding-x;
+    max-width: calc($container-max-width + $container-padding-x * 2);
+    margin-inline: auto;
+}
