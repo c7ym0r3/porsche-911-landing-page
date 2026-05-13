@@ -11,8 +11,10 @@ button {
     background-color: transparent;
     font-size: 13px;
     color: $color-grey;
+    border: 1px solid rgba(255, 255, 255, 0.27);
 }
 
 .btn-2 {
     background-color: $color-crema;
+    text-transform: uppercase;
 }
