@@ -1,20 +1,21 @@
 button {
-    padding: 10px 24px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: $color-dark-grey;
-    border: none;
+  padding: 10px 24px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: $color-dark-grey;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-1 {
-    background-color: transparent;
-    font-size: 13px;
-    color: $color-grey;
-    border: 1px solid rgba(255, 255, 255, 0.27);
+  background-color: transparent;
+  font-size: 13px;
+  color: $color-grey;
+  border: 1px solid rgba(#fff, 0.23);
 }
 
 .btn-2 {
-    background-color: $color-crema;
-    text-transform: uppercase;
+  background-color: $color-crema;
+  text-transform: uppercase;
 }
