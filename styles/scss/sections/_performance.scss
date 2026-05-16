@@ -6,12 +6,11 @@
 }
 
 .performance__text {
-  max-width: 50%;
   padding-block: 80px;
   padding-left: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 48px;
 }
 
 .performance__title {
@@ -77,6 +76,10 @@
   .performance__list {
     margin-top: 10px;
   }
+
+  .performance__text {
+    row-gap: 28px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -91,5 +94,6 @@
     padding: 0;
     max-width: none;
     margin-bottom: 30px;
+    row-gap: 10px;
   }
 }
