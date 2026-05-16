@@ -6,6 +6,7 @@ button {
   color: $color-dark-grey;
   border: none;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .btn-1 {
@@ -18,4 +19,8 @@ button {
 .btn-2 {
   background-color: $color-crema;
   text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.8;
 }

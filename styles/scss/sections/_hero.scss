@@ -66,6 +66,11 @@
   text-align: start;
   background-color: rgba(#fff, 0.03);
   border: 1px solid rgba(#fff, 0.08);
+  transition: background-color 0.2s ease;
+}
+
+.hero__stats-item:hover {
+  background-color: rgba(#fff, 0.1);
 }
 
 .hero__stats-number {

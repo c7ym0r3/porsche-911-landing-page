@@ -37,6 +37,11 @@
   font-style: italic;
   letter-spacing: 2px;
   color: $color-grey;
+  transition: color 0.2s ease;
+}
+
+.header__nav-item:hover {
+  color: $color-light;
 }
 
 .header__action {
