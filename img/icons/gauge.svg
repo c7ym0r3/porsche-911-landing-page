@@ -1,0 +1,5 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000" height="24.000000" fill="none" customFrame="#000000">
+	<rect id="gauge" width="24.000000" height="24.000000" x="0.000000" y="0.000000" />
+	<path id="Вектор 2" d="M12 14L16 10" stroke="rgb(201,169,98)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" />
+	<path id="Вектор 3" d="M3.34001 19C2.33505 17.2595 1.87783 15.2567 2.02794 13.2526C2.17806 11.2485 2.92855 9.33608 4.18156 7.76478C5.43457 6.19349 7.13195 5.03619 9.05239 4.4438C10.9728 3.85141 13.0272 3.85141 14.9476 4.44381C16.8681 5.0362 18.5654 6.19349 19.8185 7.76478C21.0715 9.33608 21.822 11.2485 21.9721 13.2526C22.1222 15.2567 21.665 17.2595 20.66 19" fill-rule="nonzero" stroke="rgb(201,169,98)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" />
+</svg>

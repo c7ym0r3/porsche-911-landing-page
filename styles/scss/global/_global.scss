@@ -7,14 +7,16 @@ $color-dark-grey: #0a0a0a;
 $color-light: #fff;
 $color-grey: #848484;
 $color-crema: #c9a962;
+$color-141414: #141414;
 
-html,
-body {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Inter", sans-serif;
   background-color: $color-dark-grey;
   color: $color-light;
 }

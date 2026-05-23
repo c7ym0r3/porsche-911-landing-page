@@ -9,14 +9,14 @@ button {
   transition: all 0.2s ease;
 }
 
-.btn-1 {
+.button--primary {
   background-color: transparent;
   font-size: 13px;
   color: $color-grey;
   border: 1px solid rgba(#fff, 0.23);
 }
 
-.btn-2 {
+.button--secondary {
   background-color: $color-crema;
   text-transform: uppercase;
 }

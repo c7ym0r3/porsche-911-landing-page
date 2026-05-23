@@ -3,7 +3,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: calc(100vh - 80px);
   overflow: hidden;
 }
 
@@ -12,7 +11,7 @@
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: flex-end;
-  height: calc(100% - 80px);
+  min-height: calc(100svh - 80px);
 }
 
 .hero__text {
@@ -39,7 +38,7 @@
   letter-spacing: 1px;
   line-height: 160%;
   font-weight: light;
-  opacity: 0.73;
+  color: rgba(255, 255, 255, 0.73);
 }
 
 .hero__buttons .btn-1 {
@@ -52,6 +51,7 @@
 
 .hero__stats {
   display: flex;
+  margin-bottom: 80px;
 }
 
 .hero__stats-item span {

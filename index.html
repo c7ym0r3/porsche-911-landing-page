@@ -3,34 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porshe 911</title>
-    <link rel="stylesheet" href="./styles/css/style.css" />
+    <title>Porsche 911 landing page</title>
     <link rel="stylesheet" href="./styles/css/reset.css" />
+    <link rel="stylesheet" href="./styles/css/style.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__logo">
-          <a href="#">porsche</a> <span> 911 turbo s</span>
-        </div>
+        <a class="header__logo" href="/"> porsche <span> 911 turbo s</span> </a>
 
         <nav>
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="">Performance</a></li>
-            <li class="header__nav-item"><a href="">Design</a></li>
-            <li class="header__nav-item"><a href="">Technology</a></li>
-            <li class="header__nav-item"><a href="">Heritage</a></li>
+            <li class="header__nav-item">
+              <a href="#performance">Performance</a>
+            </li>
+            <li class="header__nav-item"><a href="#">Design</a></li>
+            <li class="header__nav-item"><a href="#">Technology</a></li>
+            <li class="header__nav-item"><a href="#">Heritage</a></li>
           </ul>
         </nav>
 
         <div class="header__action">
-          <button class="header__action-button btn-1">Configure</button>
-          <button class="header__action-button btn-2">Order now</button>
+          <button class="header__action-button button--primary" type="button">
+            Configure
+          </button>
+          <button class="header__action-button button--secondary" type="button">
+            Order now
+          </button>
         </div>
 
-        <button class="header__bars-button">
-          <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <button class="header__bars-button" type="button">
           <svg
             width="32px"
             height="32px"
@@ -56,7 +59,7 @@
     </header>
 
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <div class="hero__text">
             <div class="note hero__note">
@@ -64,13 +67,13 @@
               <p>the apex of performance</p>
             </div>
             <h1 class="hero__title">911 Turbo S</h1>
-            <h3 class="hero__desc">
+            <p class="hero__desc">
               650 horsepower. 0–100 km/h in 2.7 seconds.<br />The fastest
               production 911 ever built.
-            </h3>
+            </p>
             <div class="hero__buttons">
-              <button class="hero__btn btn-2">CONFIGURE YOURS</button>
-              <button class="hero__btn btn-1">explore model</button>
+              <button class="hero__btn button--primary">Configure yours</button>
+              <button class="hero__btn button--secondary">Explore model</button>
             </div>
           </div>
           <div class="hero__stats">
@@ -102,35 +105,153 @@
         </div>
       </section>
 
-      <section class="performance">
-        <div class="performance__text">
-          <div class="note performance__note">
-            <div class="line"></div>
-            <p>ENGINEERING PRECISION</p>
+      <section class="performance" id="performance">
+        <div class="container">
+          <div class="performance__text">
+            <div class="note performance__note">
+              <div class="line"></div>
+              <p>engineering precision</p>
+            </div>
+
+            <h3 class="performance__title">Born on the Racetrack</h3>
+            <p class="performance__desc">
+              Every component of the 911 Turbo S has been engineered with one
+              singular focus — absolute performance. From the 650 hp
+              twin-turbocharged flat-six to the rear-axle steering, this machine
+              exists in a class of its own.
+            </p>
+
+            <ul class="performance__list">
+              <li class="performance__list-item">
+                PDK dual-clutch transmission with 7 gears
+              </li>
+              <li class="performance__list-item">
+                Porsche Active Suspension Management (PASM)
+              </li>
+              <li class="performance__list-item">
+                All-wheel drive with torque vectoring
+              </li>
+            </ul>
+          </div>
+          <div class="performance__img">
+            <img
+              src="./img/performance.png"
+              alt="performance img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="design">
+        <div class="container">
+          <div class="design__header">
+            <div class="note design__note">
+              <div class="line"></div>
+              <p>iconic design</p>
+            </div>
+            <h2 class="design__title">Shape of Legends</h2>
+            <p class="design__desc">
+              Six decades of refinement. One unmistakable silhouette.
+            </p>
           </div>
 
-          <h3 class="performance__title">Born on the Racetrack</h3>
-          <p class="performance__desc">
-            Every component of the 911 Turbo S has been engineered with one
-            singular focus — absolute performance. From the 650 hp
-            twin-turbocharged flat-six to the rear-axle steering, this machine
-            exists in a class of its own.
-          </p>
+          <div class="design__gallery">
+            <div class="design__gallery-main">
+              <figure class="design__gallery-item">
+                <img
+                  src="./img/porsche-wheel.png"
+                  alt="Porsche 911 Turbo S wheel detail"
+                  loading="lazy"
+                  width="860"
+                  height="520"
+                />
+              </figure>
+            </div>
+            <div class="design__gallery-side">
+              <figure class="design__gallery-item">
+                <img
+                  src="./img/porsche-steering.png"
+                  alt="Porsche 911 Turbo S steering wheel"
+                  loading="lazy"
+                  width="418"
+                  height="259"
+                />
+              </figure>
+              <figure class="design__gallery-item">
+                <img
+                  src="./img/porsche-brakes.png"
+                  alt="Porsche 911 Turbo S brakes"
+                  loading="lazy"
+                  width="418"
+                  height="259"
+                />
+              </figure>
+            </div>
+          </div>
 
-          <ul class="performance__list">
-            <li class="performance__list-item">
-              PDK dual-clutch transmission with 7 gears
+          <ul class="design__features">
+            <li class="design__features-item">
+              <img
+                src="./img/icons/zap.svg"
+                alt=""
+                loading="lazy"
+                aria-hidden="true"
+                width="24"
+                height="24"
+              />
+              <h4 class="design__features-title">Aerodynamic Mastery</h4>
+              <p class="design__features-desc">
+                Active aerodynamics with rear spoiler auto-deploys, generating
+                downforce exactly when needed.
+              </p>
             </li>
-            <li class="performance__list-item">
-              Porsche Active Suspension Management (PASM)
+            <li class="design__features-item">
+              <img
+                src="./img/icons/gauge.svg"
+                alt=""
+                loading="lazy"
+                aria-hidden="true"
+                width="24"
+                height="24"
+              />
+              <h4 class="design__features-title">Precision Braking</h4>
+              <p class="design__features-desc">
+                Carbon-ceramic composite brakes with 10-piston monoblock
+                calipers. Stop from 100 km/h in 30.9 m.
+              </p>
             </li>
-            <li class="performance__list-item">
-              All-wheel drive with torque vectoring
+            <li class="design__features-item">
+              <img
+                src="./img/icons/settings.svg"
+                alt=""
+                loading="lazy"
+                aria-hidden="true"
+                width="24"
+                height="24"
+              />
+              <h4 class="design__features-title">Adaptive Chassis</h4>
+              <p class="design__features-desc">
+                PDCC Sport with electromechanical roll stabilisation adapts to
+                road in milliseconds.
+              </p>
+            </li>
+            <li class="design__features-item">
+              <img
+                src="./img/icons/eye.svg"
+                alt=""
+                loading="lazy"
+                aria-hidden="true"
+                width="24"
+                height="24"
+              />
+              <h4 class="design__features-title">Night Vision Assist</h4>
+              <p class="design__features-desc">
+                Thermal imaging camera detects pedestrians and animals up to
+                300m ahead in total darkness.
+              </p>
             </li>
           </ul>
-        </div>
-        <div class="performance__img">
-          <img src="./img/performance.png" alt="performance img" />
         </div>
       </section>
     </main>

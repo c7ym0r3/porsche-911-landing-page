@@ -1,4 +1,4 @@
-.performance {
+.performance .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,7 +83,7 @@
 }
 
 @media (max-width: 425px) {
-  .performance {
+  .performance .container {
     flex-direction: column;
     padding-inline: $container-padding-x;
     max-width: calc($container-max-width + $container-padding-x * 2);

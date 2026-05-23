@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-html,
-body {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Inter", sans-serif;
   background-color: #0a0a0a;
   color: #fff;
 }
@@ -80,7 +81,7 @@ body {
   align-items: center;
 }
 
-.header .header__action-button {
+.header__action-button {
   border: none;
 }
 
@@ -110,7 +111,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: calc(100vh - 80px);
   overflow: hidden;
 }
 
@@ -119,7 +119,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: flex-end;
-  height: calc(100% - 80px);
+  min-height: calc(100svh - 80px);
 }
 
 .hero__text {
@@ -146,7 +146,7 @@ body {
   letter-spacing: 1px;
   line-height: 160%;
   font-weight: light;
-  opacity: 0.73;
+  color: rgba(255, 255, 255, 0.73);
 }
 
 .hero__buttons .btn-1 {
@@ -159,6 +159,7 @@ body {
 
 .hero__stats {
   display: flex;
+  margin-bottom: 80px;
 }
 
 .hero__stats-item span {
@@ -226,7 +227,7 @@ body {
          column-gap: 10px;
   }
 }
-.performance {
+.performance .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -309,7 +310,7 @@ body {
   }
 }
 @media (max-width: 425px) {
-  .performance {
+  .performance .container {
     flex-direction: column;
     padding-inline: 20px;
     max-width: 1320px;
@@ -322,6 +323,57 @@ body {
     row-gap: 10px;
   }
 }
+.design {
+  padding-top: 100px;
+}
+
+.design__title {
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+.design__desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.design__gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.design__features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.design__features-item {
+  padding: 32px;
+  background-color: #141414;
+  border: 1px solid #0a0a0a;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.design__features-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.design__features-desc {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.4);
+}
+
 button {
   padding: 10px 24px;
   font-size: 12px;
@@ -333,14 +385,14 @@ button {
   transition: all 0.2s ease;
 }
 
-.btn-1 {
+.button--primary {
   background-color: transparent;
   font-size: 13px;
   color: #848484;
   border: 1px solid rgba(255, 255, 255, 0.23);
 }
 
-.btn-2 {
+.button--secondary {
   background-color: #c9a962;
   text-transform: uppercase;
 }
