@@ -425,6 +425,7 @@ body {
 
 .tech__text {
   padding: 80px;
+  margin-left: 80px;
 }
 
 .tech__note {
@@ -462,6 +463,7 @@ body {
 @media (max-width: 1024px) {
   .tech__text {
     padding: 40px;
+    margin-left: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -470,6 +472,9 @@ body {
   }
   .tech__title {
     font-size: 32px;
+  }
+  .tech__text {
+    margin-left: 0px;
   }
 }
 button {
