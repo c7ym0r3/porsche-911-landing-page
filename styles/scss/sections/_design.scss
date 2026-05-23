@@ -68,8 +68,12 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 520px) {
   .design__features {
     display: block;
+  }
+
+  .design__title {
+    font-size: 32px;
   }
 }
