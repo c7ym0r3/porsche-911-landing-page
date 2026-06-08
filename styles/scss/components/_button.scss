@@ -24,3 +24,20 @@ button {
 button:hover {
   opacity: 0.8;
 }
+
+.link--primary {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.link--secondary {
+  background-color: transparent;
+  font-size: 13px;
+  color: $color-grey;
+  border: 1px solid rgba(#fff, 0.23);
+}

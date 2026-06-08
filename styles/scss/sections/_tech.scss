@@ -58,13 +58,21 @@
 @media (max-width: 768px) {
   .tech .container {
     flex-direction: column;
+    padding-inline: $container-padding-x;
+    max-width: calc($container-max-width + $container-padding-x * 2);
+    margin-inline: auto;
   }
 
   .tech__title {
     font-size: 32px;
   }
 
+  .tech__img {
+    margin-bottom: 10px;
+  }
+
   .tech__text {
     margin-left: 0px;
+    padding: 0;
   }
 }

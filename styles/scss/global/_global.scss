@@ -9,6 +9,7 @@ $color-grey: #848484;
 $color-crema: #c9a962;
 $color-141414: #141414;
 $background-secondary: #0d0d0d;
+$color-black: #000;
 
 *,
 *::after,
@@ -20,6 +21,10 @@ body {
   font-family: "Inter", sans-serif;
   background-color: $color-dark-grey;
   color: $color-light;
+}
+
+body.scroll-block {
+  overflow: hidden;
 }
 
 .container {
@@ -37,4 +42,9 @@ body {
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+.line {
+  border: 1px solid $color-crema;
+  width: 40px;
 }
