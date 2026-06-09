@@ -52,10 +52,10 @@
 .performance__img {
   height: 100%;
   align-items: end;
-}
 
-.performance__img img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {

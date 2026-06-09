@@ -3,9 +3,6 @@
   background-color: $background-secondary;
 }
 
-.design .container {
-}
-
 .design__header {
   margin-bottom: 64px;
 }
@@ -31,11 +28,13 @@
   justify-content: space-between;
   gap: 2px;
   margin-bottom: 64px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
-.design__gallery-item img {
-  max-width: 100%;
-  height: auto;
-}
+
 .design__features {
   display: flex;
   justify-content: space-between;

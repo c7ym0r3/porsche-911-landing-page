@@ -41,7 +41,6 @@ body.scroll-block {
 .header {
   padding-block: 20px;
 }
-
 .header .container {
   display: flex;
   align-items: center;
@@ -58,7 +57,6 @@ body.scroll-block {
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-
 .header__logo span {
   font-weight: 300;
   font-size: 12px;
@@ -151,7 +149,6 @@ body.scroll-block {
   background-attachment: fixed;
   overflow: hidden;
 }
-
 .hero .container {
   display: flex;
   flex-wrap: nowrap;
@@ -199,10 +196,6 @@ body.scroll-block {
   margin-bottom: 80px;
 }
 
-.hero__stats-item span {
-  display: block;
-}
-
 .hero__stats-wrapper {
   padding: 32px 24px;
 }
@@ -212,6 +205,9 @@ body.scroll-block {
   background-color: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: background-color 0.2s ease;
+}
+.hero__stats-item span {
+  display: block;
 }
 
 .hero__stats-item:hover {
@@ -332,7 +328,6 @@ body.scroll-block {
   height: 100%;
   align-items: end;
 }
-
 .performance__img img {
   width: 100%;
 }
@@ -407,8 +402,7 @@ body.scroll-block {
   gap: 2px;
   margin-bottom: 64px;
 }
-
-.design__gallery-item img {
+.design__gallery img {
   max-width: 100%;
   height: auto;
 }
@@ -458,7 +452,6 @@ body.scroll-block {
 .tech {
   background-color: #0d0d0d;
 }
-
 .tech .container {
   display: flex;
   align-items: center;
