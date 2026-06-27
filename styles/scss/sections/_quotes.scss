@@ -1,0 +1,76 @@
+.quotes {
+  margin: 100px 0;
+}
+.quotes__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.quotes__title {
+  font-size: 48px;
+  letter-spacing: -1%;
+  font-weight: bold;
+}
+.quotes__desc {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(#fff, 0.23);
+}
+.quotes__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quotes__card {
+  padding: 40px;
+  background-color: $color-141414;
+  border: 1px solid #2a2a2a;
+}
+.quotes__card-symbol {
+  font-size: 48px;
+  color: $color-crema;
+  font-weight: bold;
+}
+.quotes__card-text {
+  font-size: 16px;
+  line-height: 170%;
+  font-weight: 300;
+  color: rgba(#fff, 0.6);
+  margin-bottom: 24px;
+}
+
+.quotes__card-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.quotes__card-user img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.quotes__user-name {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.quotes__user-company {
+  font-size: 11px;
+  font-style: italic;
+  color: #848484;
+}
+
+@media (max-width: 800px) {
+  .quotes__cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .quotes__title {
+    font-size: 36px;
+  }
+  .quotes__desc {
+    font-size: 12px;
+  }
+}
