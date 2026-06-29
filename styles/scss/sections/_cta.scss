@@ -1,0 +1,117 @@
+.CTA {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)),
+    url(../../../img/CTASection.png);
+  padding: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 24px;
+    height: 640px;
+  }
+}
+
+.CTA__quote {
+  display: flex;
+  align-items: center;
+
+  color: $color-crema;
+  font-size: 11px;
+  font-style: italic;
+  letter-spacing: 4px;
+}
+.CTA__title {
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -2%;
+}
+.CTA__desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(#fff, 0.4);
+}
+.CTA__action {
+  button,
+  a {
+    padding: 18px 48px;
+  }
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+.CTA__benefits {
+  display: flex;
+  column-gap: 70px;
+}
+
+.CTA__benefits {
+  li {
+    position: relative;
+    color: rgba(#fff, 0.27);
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  li + li::before {
+    content: "•";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4px;
+    width: 4px;
+    color: rgba(#fff, 0.13);
+    top: 4px;
+    left: -35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .CTA__title {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .CTA__title {
+    font-size: 32px;
+  }
+  .CTA__desc {
+    font-size: 16px;
+  }
+
+  .CTA__action {
+    button,
+    a {
+      padding: 10px 30px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .CTA {
+    padding: 15px;
+  }
+
+  .CTA__quote {
+    gap: 5px;
+    .line:last-child {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .CTA__action {
+    flex-direction: column;
+  }
+
+  .CTA__action-link {
+    margin-bottom: 10px;
+  }
+}

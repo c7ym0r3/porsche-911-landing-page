@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 *,
 *::after,
@@ -36,6 +37,7 @@ body.scroll-block {
 .line {
   border: 1px solid #c9a962;
   width: 40px;
+  height: 1px;
 }
 
 .header {
@@ -555,7 +557,6 @@ body.scroll-block {
 
 .quotes__cards {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -615,6 +616,114 @@ body.scroll-block {
     font-size: 12px;
   }
 }
+.CTA {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)), url(../../../img/CTASection.png);
+  padding: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.CTA .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 24px;
+  height: 640px;
+}
+
+.CTA__quote {
+  display: flex;
+  align-items: center;
+  color: #c9a962;
+  font-size: 11px;
+  font-style: italic;
+  letter-spacing: 4px;
+}
+
+.CTA__title {
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -2%;
+}
+
+.CTA__desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.CTA__action button,
+.CTA__action a {
+  padding: 18px 48px;
+}
+.CTA__action {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+.CTA__benefits {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+
+.CTA__benefits li {
+  position: relative;
+  color: rgba(255, 255, 255, 0.27);
+  font-size: 12px;
+  font-style: italic;
+}
+.CTA__benefits li + li::before {
+  content: "•";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4px;
+  width: 4px;
+  color: rgba(255, 255, 255, 0.13);
+  top: 4px;
+  left: -35px;
+}
+
+@media (max-width: 1024px) {
+  .CTA__title {
+    font-size: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .CTA__title {
+    font-size: 32px;
+  }
+  .CTA__desc {
+    font-size: 16px;
+  }
+  .CTA__action button,
+  .CTA__action a {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 425px) {
+  .CTA {
+    padding: 15px;
+  }
+  .CTA__quote {
+    gap: 5px;
+  }
+  .CTA__quote .line:last-child {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .CTA__action {
+    flex-direction: column;
+  }
+  .CTA__action-link {
+    margin-bottom: 10px;
+  }
+}
 button {
   padding: 10px 24px;
   font-size: 12px;
@@ -629,12 +738,13 @@ button {
 .button--primary {
   background-color: transparent;
   font-size: 13px;
-  color: #848484;
+  color: rgba(132, 132, 132, 0.53);
   border: 1px solid rgba(255, 255, 255, 0.23);
 }
 
 .button--secondary {
   background-color: #c9a962;
+  color: #0a0a0a;
   text-transform: uppercase;
 }
 
