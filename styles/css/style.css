@@ -655,7 +655,7 @@ button:hover {
   }
 }
 .CTA {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)), url(../../../img/CTASection.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)), url(../../img/CTASection.png);
   padding: 80px;
   background-repeat: no-repeat;
   background-size: cover;
