@@ -168,7 +168,7 @@ body.scroll-block {
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: 112px;
   font-weight: 800;
   letter-spacing: -3px;
 }
@@ -297,7 +297,7 @@ body.scroll-block {
 
 .performance__title {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 64px;
   line-height: 110%;
   letter-spacing: -2%;
 }
@@ -388,7 +388,7 @@ body.scroll-block {
 }
 
 .design__title {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: bold;
   letter-spacing: -2px;
   margin-bottom: 16px;
@@ -481,7 +481,7 @@ body.scroll-block {
 }
 
 .tech__title {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -544,7 +544,7 @@ body.scroll-block {
 }
 
 .quotes__title {
-  font-size: 48px;
+  font-size: 64px;
   letter-spacing: -1%;
   font-weight: bold;
 }
@@ -641,7 +641,7 @@ body.scroll-block {
 }
 
 .CTA__title {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 800;
   letter-spacing: -2%;
 }
@@ -690,7 +690,7 @@ body.scroll-block {
 
 @media (max-width: 1024px) {
   .CTA__title {
-    font-size: 48px;
+    font-size: 64px;
   }
 }
 @media (max-width: 768px) {
@@ -725,7 +725,7 @@ body.scroll-block {
   }
 }
 .footer {
-  padding-block: 48px 56px;
+  padding-top: 64px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .footer .container {
@@ -754,6 +754,7 @@ body.scroll-block {
 
 .footer__subtitle {
   color: #c9a962;
+  text-transform: uppercase;
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 4px;
@@ -798,6 +799,38 @@ body.scroll-block {
   letter-spacing: 2px;
 }
 
+.privacy {
+  margin-top: 64px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.privacy .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy__left {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.privacy__right ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+
+.privacy__right a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.2s ease;
+}
+.privacy__right a:hover {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding-block: 40px 48px;
@@ -810,6 +843,10 @@ body.scroll-block {
     width: 100%;
     gap: 24px 32px;
   }
+  .privacy .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 480px) {
   .footer__nav {
@@ -821,6 +858,10 @@ body.scroll-block {
   }
   .footer__desc {
     font-size: 12px;
+  }
+  .privacy__right ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 button {
