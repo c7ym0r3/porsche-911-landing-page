@@ -8,14 +8,14 @@
   margin-bottom: 48px;
 }
 .quotes__title {
-  font-size: 48px;
+  font-size: $font-size-title;
   letter-spacing: -1%;
   font-weight: bold;
 }
 .quotes__desc {
-  font-size: 16px;
+  font-size: $font-size-text;
   font-weight: 300;
-  color: rgba(#fff, 0.23);
+  color: $color-white-23;
 }
 .quotes__cards {
   display: flex;
@@ -23,19 +23,19 @@
 }
 .quotes__card {
   padding: 40px;
-  background-color: $color-141414;
-  border: 1px solid #2a2a2a;
+  background-color: $color-surface-primary;
+  border: 1px solid $color-surface-border;
 }
 .quotes__card-symbol {
   font-size: 48px;
-  color: $color-crema;
+  color: $color-accent;
   font-weight: bold;
 }
 .quotes__card-text {
   font-size: 16px;
   line-height: 170%;
   font-weight: 300;
-  color: rgba(#fff, 0.6);
+  color: $color-white-60;
   margin-bottom: 24px;
 }
 
@@ -58,7 +58,7 @@
 .quotes__user-company {
   font-size: 11px;
   font-style: italic;
-  color: #848484;
+  color: $color-text-secondary;
 }
 
 @media (max-width: 800px) {
@@ -67,9 +67,9 @@
     justify-content: center;
   }
   .quotes__title {
-    font-size: 36px;
+    font-size: $font-size-title-mobile;
   }
   .quotes__desc {
-    font-size: 12px;
+    font-size: $font-size-text-mobile;
   }
 }

@@ -23,17 +23,17 @@
 }
 
 .hero__title {
-  font-size: 112px;
+  font-size: $font-size-title;
   font-weight: 800;
   letter-spacing: -3px;
 }
 
 .hero__desc {
-  font-size: 20px;
+  font-size: $font-size-text;
   letter-spacing: 1px;
   line-height: 160%;
   font-weight: light;
-  color: rgba(255, 255, 255, 0.73);
+  color: $color-white-73;
 }
 
 .hero__btn {
@@ -43,7 +43,7 @@
 
 .hero__link {
   padding: 16px 40px;
-  background-color: $color-crema;
+  background-color: $color-accent;
   color: $color-black;
   text-transform: uppercase;
 }
@@ -59,8 +59,8 @@
 
 .hero__stats-item {
   text-align: start;
-  background-color: rgba(#fff, 0.03);
-  border: 1px solid rgba(#fff, 0.08);
+  background-color: $color-white-03;
+  border: 1px solid $color-white-08;
   transition: background-color 0.2s ease;
 
   span {
@@ -69,14 +69,14 @@
 }
 
 .hero__stats-item:hover {
-  background-color: rgba(#fff, 0.1);
+  background-color: $color-white-10;
 }
 
 .hero__stats-number {
   font-weight: bold;
   font-size: 40px;
   letter-spacing: -1px;
-  color: $color-crema;
+  color: $color-accent;
   margin-bottom: 4px;
 }
 
@@ -84,12 +84,12 @@
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 3px;
-  color: $color-grey;
+  color: $color-text-secondary;
   font-style: italic;
 }
 
 .hero__buttons:nth-last-child {
-  border: 1px solid rgba(255, 255, 255, 0.27);
+  border: 1px solid $color-white-27;
 }
 
 @media (max-width: 768px) {
@@ -107,7 +107,7 @@
 
 @media (max-width: 425px) {
   .hero__title {
-    font-size: 64px;
+    font-size: $font-size-title-mobile;
   }
 
   .hero__text {

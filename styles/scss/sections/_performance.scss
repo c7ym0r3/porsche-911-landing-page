@@ -17,16 +17,16 @@
 
 .performance__title {
   font-weight: bold;
-  font-size: 64px;
+  font-size: $font-size-title;
   line-height: 110%;
   letter-spacing: -2%;
 }
 
 .performance__desc {
   font-weight: light;
-  font-size: 16px;
+  font-size: $font-size-text;
   line-height: 170%;
-  color: rgba(#fff, 0.53);
+  color: $color-white-53;
   max-width: 480px;
 }
 
@@ -36,9 +36,9 @@
 }
 
 .performance__list-item {
-  font-size: 14px;
+  font-size: $font-size-text-mobile;
   font-style: italic;
-  color: rgba(#fff, 0.67);
+  color: $color-white-67;
 }
 
 .performance__list-item + .performance__list-item {
@@ -46,7 +46,7 @@
 }
 
 .performance__list-item::marker {
-  color: $color-crema;
+  color: $color-accent;
 }
 
 .performance__img {

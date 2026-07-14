@@ -1,6 +1,6 @@
 .CTA {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)),
+    linear-gradient($color-black-87, $color-black-87),
     url(../../../img/CTASection.png);
   padding: 80px;
   background-repeat: no-repeat;
@@ -20,20 +20,20 @@
   display: flex;
   align-items: center;
 
-  color: $color-crema;
+  color: $color-accent;
   font-size: 11px;
   font-style: italic;
   letter-spacing: 4px;
 }
 .CTA__title {
-  font-size: 72px;
+  font-size: $font-size-title;
   font-weight: 800;
   letter-spacing: -2%;
 }
 .CTA__desc {
-  font-size: 18px;
+  font-size: $font-size-text;
   font-weight: 300;
-  color: rgba(#fff, 0.4);
+  color: $color-white-40;
 }
 .CTA__action {
   button,
@@ -52,7 +52,7 @@
 .CTA__benefits {
   li {
     position: relative;
-    color: rgba(#fff, 0.27);
+    color: $color-white-27;
     font-size: 12px;
     font-style: italic;
   }
@@ -65,7 +65,7 @@
     justify-content: center;
     height: 4px;
     width: 4px;
-    color: rgba(#fff, 0.13);
+    color: $color-white-13;
     top: 4px;
     left: -35px;
   }
@@ -73,16 +73,16 @@
 
 @media (max-width: 1024px) {
   .CTA__title {
-    font-size: 64px;
+    font-size: $font-size-title;
   }
 }
 
 @media (max-width: 768px) {
   .CTA__title {
-    font-size: 32px;
+    font-size: $font-size-title-mobile;
   }
   .CTA__desc {
-    font-size: 16px;
+    font-size: $font-size-text;
   }
 
   .CTA__action {

@@ -3,13 +3,35 @@
 $container-padding-x: 20px;
 $container-max-width: 1280px;
 
-$color-dark-grey: #0a0a0a;
-$color-light: #fff;
-$color-grey: #848484;
-$color-crema: #c9a962;
-$color-141414: #141414;
-$background-secondary: #0d0d0d;
+$font-size-title: 48px;
+$font-size-title-mobile: 32px;
+$font-size-text: 16px;
+$font-size-text-mobile: 14px;
+
+$color-bg-primary: #0a0a0a;
+$color-bg-secondary: #0d0d0d;
+$color-surface-primary: #141414;
+$color-surface-border: #2a2a2a;
+$color-text-primary: #fff;
+$color-text-secondary: #848484;
+$color-accent: #c9a962;
 $color-black: #000;
+$color-white: #fff;
+
+$color-black-65: rgba($color-black, 0.65);
+$color-black-87: rgba($color-black, 0.87);
+
+$color-white-03: rgba($color-white, 0.03);
+$color-white-08: rgba($color-white, 0.08);
+$color-white-10: rgba($color-white, 0.1);
+$color-white-13: rgba($color-white, 0.13);
+$color-white-23: rgba($color-white, 0.23);
+$color-white-27: rgba($color-white, 0.27);
+$color-white-40: rgba($color-white, 0.4);
+$color-white-53: rgba($color-white, 0.53);
+$color-white-60: rgba($color-white, 0.6);
+$color-white-67: rgba($color-white, 0.67);
+$color-white-73: rgba($color-white, 0.73);
 
 *,
 *::after,
@@ -19,8 +41,8 @@ $color-black: #000;
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: $color-dark-grey;
-  color: $color-light;
+  background-color: $color-bg-primary;
+  color: $color-text-primary;
 }
 
 body.scroll-block {
@@ -37,7 +59,7 @@ body.scroll-block {
   display: flex;
   align-items: center;
   column-gap: 12px;
-  color: $color-crema;
+  color: $color-accent;
   font-size: 11px;
   font-style: italic;
   text-transform: uppercase;
@@ -45,7 +67,7 @@ body.scroll-block {
 }
 
 .line {
-  border: 1px solid $color-crema;
+  border: 1px solid $color-accent;
   width: 40px;
   height: 1px;
 }

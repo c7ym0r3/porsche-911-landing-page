@@ -1,6 +1,6 @@
 .design {
   padding-block: 100px;
-  background-color: $background-secondary;
+  background-color: $color-bg-secondary;
 }
 
 .design__header {
@@ -12,15 +12,15 @@
 }
 
 .design__title {
-  font-size: 64px;
+  font-size: $font-size-title;
   font-weight: bold;
   letter-spacing: -2px;
   margin-bottom: 16px;
 }
 .design__desc {
-  font-size: 18px;
+  font-size: $font-size-text;
   font-weight: 300;
-  color: rgba(#fff, 0.4);
+  color: $color-white-40;
 }
 .design__gallery {
   display: flex;
@@ -41,8 +41,8 @@
 }
 .design__features-item {
   padding: 32px;
-  background-color: $color-141414;
-  border: 1px solid $color-dark-grey;
+  background-color: $color-surface-primary;
+  border: 1px solid $color-bg-primary;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -58,7 +58,7 @@
   font-size: 13px;
   font-weight: 300;
   line-height: 160%;
-  color: rgba(#fff, 0.4);
+  color: $color-white-40;
 }
 
 @media (max-width: 1024px) {
@@ -73,6 +73,6 @@
   }
 
   .design__title {
-    font-size: 32px;
+    font-size: $font-size-title-mobile;
   }
 }
