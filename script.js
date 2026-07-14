@@ -28,7 +28,7 @@ if (sections.length) {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.15 },
   );
 
   sections.forEach((section) => observer.observe(section));

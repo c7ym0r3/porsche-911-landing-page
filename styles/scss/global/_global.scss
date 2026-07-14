@@ -57,7 +57,9 @@ body.scroll-block {
 main > section {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 main > section.is-visible {
@@ -68,8 +70,12 @@ main > section.is-visible {
 a,
 button,
 img {
-  transition: color 0.25s ease, background-color 0.25s ease,
-    border-color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 a:hover,
