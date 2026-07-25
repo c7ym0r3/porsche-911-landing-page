@@ -37,9 +37,12 @@
 
 .design__features {
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   justify-content: space-between;
 }
 .design__features-item {
+  flex: 1 1 220px;
   padding: 32px;
   background-color: $color-surface-primary;
   border: 1px solid $color-bg-primary;

@@ -9,19 +9,22 @@
 }
 .quotes__title {
   font-size: $font-size-title;
-  letter-spacing: -1%;
+  letter-spacing: -1px;
   font-weight: bold;
 }
 .quotes__desc {
   font-size: $font-size-text;
   font-weight: 300;
-  color: $color-white-23;
+  color: $color-white-65;
 }
 .quotes__cards {
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   justify-content: space-between;
 }
 .quotes__card {
+  flex: 1 1 280px;
   padding: 40px;
   background-color: $color-surface-primary;
   border: 1px solid $color-surface-border;

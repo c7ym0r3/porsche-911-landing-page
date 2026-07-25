@@ -20,13 +20,13 @@ body.scroll-block {
   overflow: hidden;
 }
 
-main > section {
+.reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-main > section.is-visible {
+.reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -84,7 +84,7 @@ button:hover {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -215,7 +215,7 @@ button:hover {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 160%;
-  font-weight: light;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.73);
 }
 
@@ -270,13 +270,10 @@ button:hover {
   font-style: italic;
 }
 
-.hero__buttons:nth-last-child {
-  border: 1px solid rgba(255, 255, 255, 0.27);
-}
-
 @media (max-width: 768px) {
   .hero {
     background-position: right;
+    background-attachment: scroll;
   }
 }
 @media (max-width: 490px) {
@@ -305,9 +302,6 @@ button:hover {
   }
 }
 @media (max-width: 375px) {
-  .hero__title {
-    font-size: 48px;
-  }
   .hero__stats {
     margin-bottom: 40px;
     display: grid;
@@ -321,7 +315,7 @@ button:hover {
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  max-width: 100vw;
+  max-width: 100%;
   padding: 0;
 }
 
@@ -337,11 +331,11 @@ button:hover {
   font-weight: bold;
   font-size: 64px;
   line-height: 110%;
-  letter-spacing: -2%;
+  letter-spacing: -2px;
 }
 
 .performance__desc {
-  font-weight: light;
+  font-weight: 300;
   font-size: 16px;
   line-height: 170%;
   color: rgba(255, 255, 255, 0.53);
@@ -349,7 +343,6 @@ button:hover {
 }
 
 .performance__list {
-  list-style: disc;
   list-style-type: square;
 }
 
@@ -452,10 +445,13 @@ button:hover {
 
 .design__features {
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   justify-content: space-between;
 }
 
 .design__features-item {
+  flex: 1 1 220px;
   padding: 32px;
   background-color: #141414;
   border: 1px solid #0a0a0a;
@@ -498,7 +494,7 @@ button:hover {
 .tech .container {
   display: flex;
   align-items: center;
-  max-width: 100vw;
+  max-width: 100%;
   justify-content: center;
   padding: 0;
   padding-right: 20px;
@@ -583,22 +579,25 @@ button:hover {
 
 .quotes__title {
   font-size: 64px;
-  letter-spacing: -1%;
+  letter-spacing: -1px;
   font-weight: bold;
 }
 
 .quotes__desc {
   font-size: 16px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.23);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .quotes__cards {
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   justify-content: space-between;
 }
 
 .quotes__card {
+  flex: 1 1 280px;
   padding: 40px;
   background-color: #141414;
   border: 1px solid #2a2a2a;
@@ -681,7 +680,7 @@ button:hover {
 .CTA__title {
   font-size: 64px;
   font-weight: 800;
-  letter-spacing: -2%;
+  letter-spacing: -2px;
 }
 
 .CTA__desc {
@@ -916,7 +915,7 @@ button {
 .button--primary {
   background-color: transparent;
   font-size: 13px;
-  color: rgba(132, 132, 132, 0.53);
+  color: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.23);
 }
 

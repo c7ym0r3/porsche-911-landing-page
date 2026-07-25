@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 10px;
-  max-width: 100vw;
+  max-width: 100%;
   padding: 0;
 }
 
@@ -19,11 +19,11 @@
   font-weight: bold;
   font-size: $font-size-title;
   line-height: 110%;
-  letter-spacing: -2%;
+  letter-spacing: -2px;
 }
 
 .performance__desc {
-  font-weight: light;
+  font-weight: 300;
   font-size: $font-size-text;
   line-height: 170%;
   color: $color-white-53;
@@ -31,7 +31,6 @@
 }
 
 .performance__list {
-  list-style: disc;
   list-style-type: square;
 }
 

@@ -32,7 +32,7 @@
   font-size: $font-size-text;
   letter-spacing: 1px;
   line-height: 160%;
-  font-weight: light;
+  font-weight: 300;
   color: $color-white-73;
 }
 
@@ -88,13 +88,12 @@
   font-style: italic;
 }
 
-.hero__buttons:nth-last-child {
-  border: 1px solid $color-white-27;
-}
-
 @media (max-width: 768px) {
   .hero {
     background-position: right;
+    // background-attachment: fixed is unreliable/janky on mobile
+    // (notably iOS Safari), so we drop back to normal scrolling there.
+    background-attachment: scroll;
   }
 }
 
@@ -129,10 +128,6 @@
 }
 
 @media (max-width: 375px) {
-  .hero__title {
-    font-size: 48px;
-  }
-
   .hero__stats {
     margin-bottom: 40px;
     display: grid;
