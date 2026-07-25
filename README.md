@@ -77,33 +77,37 @@ Open index.html in your browser.
 
 The layout was adapted for:
 
-Desktop screens
-Tablets
-Mobile devices
+- Desktop screens
+- Tablets
+- Mobile devices
 
 Special attention was paid to:
 
-spacing
-typography scaling
-image positioning
-section proportions
-🎯 What I Practiced
+- spacing
+- typography scaling
+- image positioning
+- section proportions
+
+
+## 🎯 What I Practiced
 
 During this project I improved my skills in:
 
-converting Figma designs into real websites
-creating complex landing page layouts
-working with positioning and absolute elements
-structuring CSS using BEM
-building responsive interfaces
-📈 Future Improvements
+- converting Figma designs into real websites
+- creating complex landing page layouts
+- working with positioning and absolute elements
+- structuring CSS using BEM
+- building responsive interfaces
+
+
+## 📈 Future Improvements
 
 Possible improvements:
 
-Add JavaScript animations
-Add interactive car configurator
-Improve loading performance
-Add more sections and transitions
+- Add JavaScript animations
+- Add interactive car configurator
+- Improve loading performance
+- Add more sections and transitions
 
 👤 Author
 c7ym0r3
