@@ -1,6 +1,7 @@
 const body = document.querySelector("body");
 const burgerBtn = document.querySelector(".header__bars-button");
 const nav = document.querySelector(".header__nav-list");
+const menuMain = document.querySelector(".menu__main");
 
 if (burgerBtn && nav) {
   const closeMenu = () => {

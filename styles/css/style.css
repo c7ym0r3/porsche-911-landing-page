@@ -79,15 +79,14 @@ button:hover {
 }
 
 .header {
+  position: relative;
+  z-index: 20;
   padding-block: 20px;
 }
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.header {
-  position: relative;
 }
 
 .header__logo {
@@ -109,27 +108,71 @@ button:hover {
 
 .menu__main {
   position: absolute;
-  z-index: 1;
-  top: 100px;
+  top: 0%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  max-width: 1200px;
   background-color: #fff;
-  min-width: 1200px;
 }
 .menu__main .container {
   margin: 0;
   max-width: none;
-  display: flex;
-  flex-direction: column;
   align-items: start;
+  justify-content: normal;
 }
-.menu__main button {
+.menu__main .menu__list-item button {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
   width: 500px;
 }
-.menu__main button.active {
-  background-color: #010205;
+.menu__main ul {
+  margin-top: 100px;
+  margin-right: 50px;
+}
+.menu__main ul li {
+  margin-bottom: 15px;
+}
+.menu__main ul li button {
+  font-size: 20px;
+  font-weight: 400;
+}
+.menu__main ul button.active, .menu__main ul button:hover {
+  background-color: rgba(1, 2, 5, 0.05);
+}
+
+.menu__content {
+  background-color: #F1F1F4;
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.menu__content .models__cards-item {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.menu__content .models__cards-item .models__card-title {
+  font-size: 26px;
+}
+.menu__content .models__cards-item .models__card-tag {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.main__menu-close {
+  font-size: 30px;
+  color: #010205;
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  border-radius: 25%;
 }
 
 .header__nav-list {
