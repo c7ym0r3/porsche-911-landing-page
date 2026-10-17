@@ -39,7 +39,6 @@
 .hero__btn {
   padding: 16px 40px;
   text-transform: uppercase;
-  margin-left: 15px;
 }
 
 .hero__link {
@@ -54,14 +53,13 @@
   margin-bottom: 80px;
 }
 
-// .hero__stats-wrapper {
-//   padding: 32px 24px;
-// }
+.hero__stats-wrapper {
+  padding: 32px 24px;
+}
 
 .hero__stats-item {
-  display: flex;
-  padding: 32px 24px;
-  background-color: $color-black;
+  text-align: start;
+  background-color: $color-white-03;
   border: 1px solid $color-white-08;
   transition: background-color 0.2s ease;
 

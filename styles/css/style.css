@@ -86,9 +86,6 @@ button:hover {
   align-items: center;
   justify-content: space-between;
 }
-.header {
-  position: relative;
-}
 
 .header__logo {
   font-weight: bold;
@@ -105,31 +102,6 @@ button:hover {
   font-size: 12px;
   color: #c9a962;
   letter-spacing: 4px;
-}
-
-.menu__main {
-  position: absolute;
-  z-index: 1;
-  top: 100px;
-  background-color: #fff;
-  min-width: 1200px;
-}
-.menu__main .container {
-  margin: 0;
-  max-width: none;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.menu__main button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  width: 500px;
-}
-.menu__main button.active {
-  background-color: #010205;
 }
 
 .header__nav-list {
@@ -250,7 +222,6 @@ button:hover {
 .hero__btn {
   padding: 16px 40px;
   text-transform: uppercase;
-  margin-left: 15px;
 }
 
 .hero__link {
@@ -265,10 +236,13 @@ button:hover {
   margin-bottom: 80px;
 }
 
-.hero__stats-item {
-  display: flex;
+.hero__stats-wrapper {
   padding: 32px 24px;
-  background-color: #000;
+}
+
+.hero__stats-item {
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: background-color 0.2s ease;
 }
@@ -936,7 +910,6 @@ button {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  border-radius: 15px;
 }
 
 .button--primary {
@@ -964,7 +937,6 @@ button:hover {
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: center;
-  border-radius: 15px;
 }
 
 .link--secondary {
