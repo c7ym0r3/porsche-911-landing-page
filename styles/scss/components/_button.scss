@@ -1,46 +1,10 @@
 button {
-  padding: 10px 24px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: $color-bg-primary;
+  color: currentColor;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  border-radius: 15px;
-}
-
-.button--primary {
-  background-color: transparent;
-  font-size: 13px;
-  color: $color-white-75;
-  border: 1px solid $color-white-23;
-}
-
-.button--secondary {
-  background-color: $color-accent;
-  color: $color-bg-primary;
-  text-transform: uppercase;
 }
 
 button:hover {
   opacity: 0.8;
-}
-
-.link--primary {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-align: center;
-  border-radius: 15px;
-}
-
-.link--secondary {
-  background-color: transparent;
-  font-size: 13px;
-  color: $color-text-secondary;
-  border: 1px solid $color-white-23;
 }
