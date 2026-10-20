@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   background-color: #fff;
-  color: #000;
+  color: #010205;
 }
 
 body.scroll-block {
@@ -65,7 +65,7 @@ button:hover {
   padding-block: 20px;
 }
 .header .container {
-  max-width: 1600px;
+  max-width: 1800px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,7 +222,7 @@ button:hover {
 }
 
 .hero__tabs {
-  margin-top: 20px;
+  margin-top: 30px;
   background-color: #f1f1f4;
   border-radius: 6px;
 }
@@ -233,8 +233,95 @@ button:hover {
   font-size: 16px;
   color: #010205;
 }
-.tab.active {
+.tab.active, .tab:hover {
   background-color: #d0d0d6;
+}
+
+.hero__title {
+  font-size: 67px;
+  margin-top: 40px;
+  letter-spacing: -5%;
+}
+
+.hero__badge {
+  font-size: 12px;
+  border-radius: 12px;
+  background-color: #dbdbde;
+  color: #010205;
+  padding: 5px 6px;
+  margin-top: 20px;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.btn.dark {
+  background-color: #010205;
+  color: #fff;
+}
+.btn.light {
+  background-color: #dbdbde;
+}
+
+.hero__pollution {
+  color: #707071;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.technical {
+  margin-top: 200px;
+  max-width: 1300px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technical__stats li + li {
+  margin-top: 80px;
+}
+
+.number {
+  font-size: 90px;
+  letter-spacing: 5%;
+}
+
+.unit {
+  font-size: 26px;
+}
+
+.desc {
+  color: #707071;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.separator {
+  font-size: 37px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.technical__btn {
+  padding: 15px 30px;
+  border-radius: 12px;
+  background-color: #dbdbde;
+  margin-top: 100px;
+}
+
+.technical__img {
+  max-width: 750px;
 }
 
 button {

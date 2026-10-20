@@ -1,0 +1,49 @@
+.technical {
+    margin-top: 200px;
+    max-width: 1300px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.technical-info {
+}
+.technical__stats {
+    li+li{
+        margin-top: 80px;
+    }
+}
+.technical__stats-acc {
+}
+.number {
+    font-size: 90px;
+    letter-spacing: 5%;
+}
+.unit {
+    font-size: 26px;
+}
+.desc {
+    color: $color-text-secondary;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.entries{
+}
+.technical__stats-power {
+}
+.separator {
+    font-size: 37px;
+    font-weight: 600;
+    margin: 0 10px
+}
+.technical__stats-maxspeed {
+}
+.technical__btn {
+    padding: 15px 30px;
+    border-radius: 12px;
+    background-color: #dbdbde;
+    margin-top: 100px;
+}
+.technical__img{
+    max-width: 750px;
+}
