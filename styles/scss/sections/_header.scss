@@ -29,7 +29,7 @@
   }
 }
 
-.header__menu{
+.header__menu {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -38,7 +38,7 @@
 }
 
 .menu__main {
-  display: none;
+  transform: translateX(-100%);
   position: absolute;
   top: 0%;
   left: 0;
@@ -52,57 +52,55 @@
     max-width: none;
     align-items: start;
     justify-content: normal;
-    
   }
 
   .menu__list-item {
-    button{
+    button {
       display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
+      align-items: center;
+      justify-content: space-between;
+      background-color: transparent;
 
-    width: 500px;
+      width: 500px;
     }
   }
 
   ul {
-  margin-top: 100px;
-  margin-right: 50px;
-  li{
-    margin-bottom: 15px;
-    button{
-      font-size: 20px;
-      font-weight: 400;
+    margin-top: 100px;
+    margin-right: 50px;
+    li {
+      margin-bottom: 15px;
+      button {
+        font-size: 20px;
+        font-weight: 400;
+      }
     }
-    
-  }
 
-  button.active, button:hover {
-    background-color: rgba(#010205, 0.05);
+    button.active,
+    button:hover {
+      background-color: rgba(#010205, 0.05);
+    }
   }
 }
-}
 
-.menu__content{
-  background-color: #F1F1F4;
+.menu__content {
+  background-color: #f1f1f4;
   min-width: 50%;
   display: flex;
   justify-content: center;
   position: relative;
 
-
-  .models__cards-item{
+  .models__cards-item {
     color: $color-black;
 
     display: flex;
     flex-direction: column;
     align-items: start;
-    
-    .models__card-title{
+
+    .models__card-title {
       font-size: 26px;
     }
-    .models__card-tag{
+    .models__card-tag {
       display: inline-block;
       padding: 10px;
       border-radius: 15px;
@@ -111,7 +109,7 @@
   }
 }
 
-.main__menu-close{
+.main__menu-close {
   font-size: 30px;
   color: #010205;
   position: absolute;
@@ -120,18 +118,17 @@
   border-radius: 25%;
 }
 
-.header__btns{
+.header__btns {
   display: flex;
   align-items: center;
   column-gap: 5px;
-  button{
+  button {
     width: 40px;
     height: 40px;
     padding: 5px;
     background-color: $color-white;
-    img{
-      border-radius: 50%; 
+    img {
+      border-radius: 50%;
     }
   }
 }
-

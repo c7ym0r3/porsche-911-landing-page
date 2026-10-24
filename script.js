@@ -1,51 +1,46 @@
 const body = document.querySelector("body");
-const burgerBtn = document.querySelector(".header__bars-button");
-const nav = document.querySelector(".header__nav-list");
-const menuMain = document.querySelector(".menu__main");
+const burgerBtn = document.querySelector(".header__menu");
+const nav = document.querySelector(".menu__main");
 
 if (burgerBtn && nav) {
   const closeMenu = () => {
-    nav.classList.remove("active");
+    nav.style.transform = "translateX(-100%)";
     body.classList.remove("scroll-block");
     burgerBtn.setAttribute("aria-expanded", "false");
     burgerBtn.setAttribute("aria-label", "Open menu");
   };
 
   const openMenu = () => {
-    nav.classList.add("active");
+    nav.style.transform = "translateX(0)";
     body.classList.add("scroll-block");
     burgerBtn.setAttribute("aria-expanded", "true");
     burgerBtn.setAttribute("aria-label", "Close menu");
   };
 
   burgerBtn.addEventListener("click", () => {
-    const isOpen = nav.classList.contains("active");
+    const isOpen = burgerBtn.getAttribute("aria-expanded") === "true";
     isOpen ? closeMenu() : openMenu();
   });
 
-  // Close on any click inside the nav — link or button (e.g. "Order now"),
-  // not just <a> elements as before.
+  // Закрытие при нажатии на ссылку или кнопку внутри меню
   nav.addEventListener("click", (event) => {
     if (event.target.closest("a, button")) {
       closeMenu();
     }
   });
 
-  // Close on Escape and return focus to the trigger, for keyboard users.
+  // Закрытие по Escape с возвратом фокуса на бургер
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && nav.classList.contains("active")) {
+    if (
+      event.key === "Escape" &&
+      burgerBtn.getAttribute("aria-expanded") === "true"
+    ) {
       closeMenu();
       burgerBtn.focus();
     }
   });
 }
 
-// Scroll-reveal animation.
-// Sections are visible by default (see style.css). We only opt a section
-// into the hidden/animated state ONCE we know IntersectionObserver is
-// available and we're about to observe it — that way, if this script
-// fails to load or run for any reason, the page never gets stuck with
-// invisible content.
 const sections = document.querySelectorAll("main > section");
 
 if (sections.length && "IntersectionObserver" in window) {

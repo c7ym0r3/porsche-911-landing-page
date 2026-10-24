@@ -97,7 +97,7 @@ button:hover {
 }
 
 .menu__main {
-  display: none;
+  transform: translateX(-100%);
   position: absolute;
   top: 0%;
   left: 0;
@@ -130,12 +130,13 @@ button:hover {
   font-size: 20px;
   font-weight: 400;
 }
-.menu__main ul button.active, .menu__main ul button:hover {
+.menu__main ul button.active,
+.menu__main ul button:hover {
   background-color: rgba(1, 2, 5, 0.05);
 }
 
 .menu__content {
-  background-color: #F1F1F4;
+  background-color: #f1f1f4;
   min-width: 50%;
   display: flex;
   justify-content: center;
